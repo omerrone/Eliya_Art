@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Eliya Art</title>
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/MyJs.js")    
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Eliya Art</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "Index")</li>
+                    <li>@Html.ActionLink("Artworks", "Gallery")</li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                    <li><a href="http://instagram.com/eliya_art?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></li>
+                    <li><div class="fb-like" data-href="https://www.facebook.com/pages/Eliya-haliwa-art/332496266936712?fref=ts" data-width="137" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>

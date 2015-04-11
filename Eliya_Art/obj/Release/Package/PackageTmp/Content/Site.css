@@ -1,0 +1,19 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    -webkit-animation-name: backgroundchange;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@-webkit-keyframes backgroundchange {
+    0% {background-image:url(images/10661090_799507473474063_1045695010_n.jpg)}
+    50% {background-image:url(images/10787923_770328513045001_975507480_n.jpg)}
+    100% {background-image: url(images/10351320_1018084748217245_7691412735912780432_n.jpg)}
+}
